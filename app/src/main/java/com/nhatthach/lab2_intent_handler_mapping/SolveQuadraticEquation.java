@@ -1,6 +1,7 @@
 package com.nhatthach.lab2_intent_handler_mapping;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -14,7 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class SolveQuadraticEquation extends AppCompatActivity {
 
     EditText edA, edB, edC;
-    Button btnSolve;
+    Button btnSolve, btnBackToMain;
     TextView tvResult;
 
     @Override
@@ -26,6 +27,7 @@ public class SolveQuadraticEquation extends AppCompatActivity {
         edB = findViewById(R.id.edB);
         edC = findViewById(R.id.edC);
         btnSolve = findViewById(R.id.btnSolve);
+        btnBackToMain = findViewById(R.id.btnBackToMain);
         tvResult = findViewById(R.id.tvResult);
 
         btnSolve.setOnClickListener(v -> {
@@ -62,6 +64,13 @@ public class SolveQuadraticEquation extends AppCompatActivity {
                 double x1 = (-b + Math.sqrt(delta)) / (2 * a);
                 double x2 = (-b - Math.sqrt(delta)) / (2 * a);
                 tvResult.setText("Phương trình có hai nghiệm phân biệt:\nx1 = " + x1 + "\nx2 = " + x2);
+            }
+        });
+
+        btnBackToMain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
 
