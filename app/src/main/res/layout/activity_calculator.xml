@@ -9,6 +9,7 @@
     android:orientation="vertical"
     android:layout_margin="10dp"
     tools:context=".Calculator">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,11 +19,13 @@
         android:gravity="center"
         android:layout_marginTop="15dp"
         />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Number A:"
         />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,46 +33,56 @@
         android:inputType="number"
         android:hint="Input Number A"
         />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Number A:"
         />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/edNumberB"
         android:inputType="number"
         android:hint="Input Number B"
-        /><LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
-    <Button
-        android:id="@+id/btnAdd"
-        android:layout_width="0dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Add" />
-    <Button
-        android:id="@+id/btnSub"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Sub" />
-    <Button
-        android:id="@+id/btnMul"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Mul" />
-    <Button
-        android:id="@+id/btnDiv"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Div" />
-</LinearLayout>
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/btnSub"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sub" />
+
+        <Button
+            android:id="@+id/btnMul"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mul" />
+
+        <Button
+            android:id="@+id/btnDiv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Div" />
+
+    </LinearLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -80,6 +93,7 @@
         android:layout_marginTop="15dp"
         android:id="@+id/tvResult"
         />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

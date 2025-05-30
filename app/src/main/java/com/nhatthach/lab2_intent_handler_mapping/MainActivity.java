@@ -26,6 +26,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button btnOpenMinMax = findViewById(R.id.btnOpenMinMax);
+        btnOpenMinMax.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MinMax.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
