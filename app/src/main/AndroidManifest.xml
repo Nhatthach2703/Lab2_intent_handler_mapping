@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Lab2_intent_handler_mapping"
         tools:targetApi="31">
         <activity
+            android:name=".SolveQuadraticEquation"
+            android:exported="false" />
+        <activity
             android:name=".MinMax"
             android:exported="false" />
         <activity
